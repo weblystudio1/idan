@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Assistant", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Secular One", sans-serif;
+  --font-secular: "Secular One", sans-serif;
+  --font-aharoni: "Aharoni", "Secular One", sans-serif;
+  --font-suez: "Suez One", serif;
+  --font-yehuda: "Rubik Yehuda", "Segoe UI", sans-serif;
+  --font-opensans: "Open Sans", "Segoe UI", sans-serif;
+  
+  --color-brown-50: #fbf9f6;
+  --color-brown-100: #f5eedf;
+  --color-brown-200: #eadbbe;
+  --color-brown-300: #dec599;
+  --color-brown-400: #cfa872;
+  --color-brown-500: #bf8d4f;
+  --color-brown-600: #a9753e;
+  --color-brown-700: #8c5d31;
+  --color-brown-800: #704725;
+  --color-brown-900: #57361e;
+  --color-brown-950: #2e1c0e;
+  
+  --color-primary-50: #fef8f3;
+  --color-primary-100: #fdf1e7;
+  --color-primary-200: #fadbca;
+  --color-primary-300: #f7bd9f;
+  --color-primary-400: #f3976c;
+  --color-primary-500: #f95f2a; /* Custom High-converting Orange-gold */
+  --color-primary-600: #e04414;
+  --color-primary-700: #ba3211;
+  --color-primary-800: #942912;
+  --color-primary-900: #772412;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Hide Scrollbar for interactive galleries */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Idan Premium Renovation Landing Page",
+  "description": "High-converting RTL landing page for renovation businesses featuring professional service sections, lead forms, and modern mobile-first design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
