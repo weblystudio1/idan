@@ -11,8 +11,7 @@ import ContactSection from "./components/ContactPage";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
-// Define generated hero asset path directly
-const heroImage = "/src/assets/images/living_kitchen_hero_1779396105108.png";
+import heroImage from "./assets/images/living_kitchen_hero_1779396105108.png";
 
 export default function App() {
   const scrollToSection = (id: string) => {
